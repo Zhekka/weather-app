@@ -1,0 +1,25 @@
+.inputStyle {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 350px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 19px;
+    border: none;
+    margin: 10px;
+    padding-left: 35px;
+}
+
+.formStyle {
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+
+.buttonStyle {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    width: 100px;
+    height: 27px;
+    font-size: 19px;
+    border: none;
+}

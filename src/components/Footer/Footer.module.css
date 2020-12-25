@@ -1,5 +1,14 @@
 .footer {
     grid-area: f;
     background: blanchedalmond;
+}
 
+.footer a {
+    text-decoration: none;
+    color: blue;
+}
+
+.textPos {
+    padding: 20px;
+    float: right;
 }

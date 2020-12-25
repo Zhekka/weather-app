@@ -1,22 +1,20 @@
 import React from 'react'
+import style from './Weather.module.css'
 
 export default function Weather(props) {
-
-    //let date = new Date(props.weatherState.sys.sunset * 1000);
-    // let hours = date.getHours(); // Minutes part from the timestamp
-    // let minutes = "0" + date.getMinutes(); // Seconds part from the timestamp
-    //
-    //
-    // let sunset_date = hours + ':' + minutes.substr(-2);
-
-
-    return (<div>
+    return (
+        <div className={style.weatherStyle}>
+        <br></br>
         { props.weatherState.name &&
         <div>
-            <p>Местоположение: {props.weatherState.name}, {props.weatherState.sys.country}</p>
-            <p>Температура: {props.weatherState.main.temp}°C</p>
-            <p>Давление: {props.weatherState.main.pressure} hPa</p>
-            {/*<p>Заход солнца в: {sunset_date}</p>*/}
+            <p>Місто: {props.weatherState.name}, {props.weatherState.sys.country}</p>
+            <p>Температура: {props.weatherState.main.temp.toFixed(1)}°C
+                відчувається як: {props.weatherState.main.feels_like.toFixed(1)}°C</p>
+            <p>Вологість: {props.weatherState.main.humidity} %</p>
+            <p>Атмосферний тиск: {props.weatherState.main.pressure} hPa</p>
+            <p>Швидкість вітру: {props.weatherState.wind.speed} м/с</p>
+            <p>Видимість: {props.weatherState.visibility} метрів</p>
+
         </div>
         }
 

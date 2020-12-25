@@ -1,5 +1,7 @@
-.header{
-    background: bisque;
+.header {
+    background: blanchedalmond;
     grid-area: h;
-
+    font-size: 28px;
+    text-align: center;
+    padding: 10px;
 }

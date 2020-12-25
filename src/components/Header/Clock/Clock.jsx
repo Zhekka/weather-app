@@ -39,9 +39,10 @@ class Clock extends Component {
 
     render() {
         return (
-            <p className={`${style.clockStyle}`}>
+            <div className={`${style.clockStyle}`}>
+
                 The time is {this.state.time}.
-            </p>
+            </div>
         );
     }
 }
